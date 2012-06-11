@@ -1,0 +1,29 @@
+{
+    "name"        : "webBuilder/extEditor",
+    "type"        : "library",
+    "description" : "WebBuilder administration module built on top of the ExtJS and extAdmin libs",
+    "license"     : "GPL-3.0",
+    "authors"     : [{
+    	"name" : "Josef Martinec", "email" : "joker806@gmail.com"
+    }],
+    
+    "repositories": [{
+        "type" : "git",
+        "url"  : "https://joker806@github.com/joker806/webBuilder"
+    },{
+        "type" : "git",
+        "url"  : "https://joker806@github.com/joker806/extAdmin"
+    }],
+    
+    "require" : {
+        "php"                   : ">=5.3",
+        "webBuilder/webBuilder" : "master-dev",
+        "extAdmin/extAdmin"     : "master-dev"
+    },
+    
+    "autoload" : {
+        "psr-0" : {
+            "WebBuilder\\Administration" : "src/"
+        }
+    }
+}
